@@ -1,0 +1,28 @@
+<div id='beers'>
+  {{#each beers}}
+    {{>beer}}
+    <h3>Food Pairing</h3>
+  <ul>
+    {{#each food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <h3>Brewers Tips:</h3>
+  <p>{{brewers_tips}}</p>
+<h3>Ingredients</h3>
+    <div id='details'>
+{{#each ingredients}}
+    {{@key}}
+    <ul>
+    {{#each this}}
+    <li>
+        <div>
+            <p>Name: {{name}}, Amount: {{amount.value}} {{amount.unit}}</p>
+        </div>
+    </li>
+    {{/each}}
+    </ul>
+{{/each}}
+    </div>
+  {{/each}}
+</div>
