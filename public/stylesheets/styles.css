@@ -45,6 +45,7 @@ nav {
   background-color: #2081c3;
   color: #f7f9f9;
   padding: 1em;
+  width: 100%;
 }
 
 a {
@@ -131,4 +132,18 @@ nav a {
 
 #detail h3 {
   margin: 2em 0 0 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 4em;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
