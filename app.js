@@ -41,3 +41,10 @@ app.get('/beers/:id', (req, res) => {
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
+
+hbs.registerHelper('capitalize', str => {
+  return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase().concat(str.slice(1)))
+    .join(' ');
+});

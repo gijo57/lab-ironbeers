@@ -1,4 +1,4 @@
-<div id='beers'>
+<div id='detail'>
   {{#each beers}}
     {{>beer}}
     <h3>Food Pairing</h3>
@@ -7,12 +7,12 @@
       <li>{{this}}</li>
     {{/each}}
   </ul>
-  <h3>Brewers Tips:</h3>
+  <h3>Brewers Tips</h3>
   <p>{{brewers_tips}}</p>
 <h3>Ingredients</h3>
     <div id='details'>
 {{#each ingredients}}
-    {{@key}}
+    <h4>{{capitalize @key}}</h4>
     <ul>
     {{#each this}}
     <li>
